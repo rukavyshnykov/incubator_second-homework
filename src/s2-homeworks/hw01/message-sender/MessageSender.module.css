@@ -1,13 +1,31 @@
 .sendForm {
-
+    padding-top: 26px;
+    display: flex;
 }
 
 .textarea {
-
+    padding: 12px 24px;
+    border: 0px;
+    background-color: #F5F7FB;
+    border-radius: 20px;
+    resize: none;
+    flex-grow: 1;
+    box-shadow: 0px 1px 2px 0px #1D21261A;
 }
 
 .button {
-
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px 39px;
+    border: 0px;
+    border-radius: 20px;
+    color: white;
+    background-color: #0066CC;
+    margin-left: 44px;
 }
 
 .button:hover {

@@ -50,5 +50,14 @@
 }
 
 .time {
-    text-align: end;
+    width: 48px;
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
 }
