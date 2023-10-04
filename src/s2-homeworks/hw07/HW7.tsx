@@ -3,6 +3,7 @@ import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 import s2 from '../../s1-main/App.module.css'
 import s from './HW7.module.css'
+import { log } from 'console'
 
 /*
 * 1 - в файле SuperSelect.tsx дописать логику функции onChangeCallback
@@ -19,7 +20,7 @@ const arr = [
 
 const HW7 = () => {
     const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
-
+    // console.log(value)
     return (
         <div id={'hw7'}>
             <div className={s2.hwTitle}>Homework #7</div>
