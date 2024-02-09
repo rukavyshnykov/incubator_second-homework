@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import s2 from '../../s1-main/App.module.css'
 import s from './HW14.module.css'
-import axios from 'axios'
+import axios, { AxiosResponse } from 'axios'
 import SuperDebouncedInput from './common/c8-SuperDebouncedInput/SuperDebouncedInput'
 import {useSearchParams} from 'react-router-dom'
 
@@ -35,7 +35,8 @@ const HW14 = () => {
         getTechs(value)
             .then((res) => {
                 // делает студент
-
+                setTechs(res!.data.techs)
+                setLoading(false)
                 // сохранить пришедшие данные
 
                 //
@@ -48,9 +49,11 @@ const HW14 = () => {
 
         // добавить/заменить значение в квери урла
         // setSearchParams(
-
+            value ? setSearchParams({find: value}) : setSearchParams('')
+        
         //
     }
+
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
